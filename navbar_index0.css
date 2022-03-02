@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*-----Cover-----*/
+body
+{
+    background-image:url(Images/capitol.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;;
+}
+/*---------Navigation---------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background: maroon;
+    
+}
+.navbar-brand img
+{
+    height: 60px;
+    padding-left: 40px;
+}
+.navbar-nav li 
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #080000!important;
+}
+.navbar-toggler
+{
+    border: none!important;
+    color: rgb(255, 64, 64)!important;
+}
+.nav-link
+{
+    color: rgb(255, 255, 255)!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*-----Slider-----*/
+#slider
+{
+    margin: auto;
+    max-width: 75%;
+    max-height: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption
+{
+    color: #000;
+    font-size: 42px;
+}

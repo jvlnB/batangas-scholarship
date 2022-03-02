@@ -1,0 +1,317 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+   background-image: url(../Images/bg-canvas.gif);
+    min-height: 100vh;
+}
+/*-----Announcement-----*/
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #FFFDD0;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color:  #FFFDD0 !important;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p{
+    text-align:center;
+    margin: 0 10px;
+}
+
+input[type=text] {
+    border: none;
+    background-color: none;
+    outline: 0;
+    font-size: 40px;
+    width: 50%;
+    height: 15%;
+    margin-bottom: 10px;
+  }
+  
+  input[type=text]:focus {
+    border: none;
+    background-color: none;
+    outline: 0;
+    width: 50%;
+    height: 15%;
+  }
+  
+  .title { 
+    width: 50%;
+    height: 15%;
+    overflow: auto;
+   
+  }
+  input[type=date] {
+    border: none;
+    background-color: none;
+    outline: 0;
+    font-size: 30px;
+    width: 50%;
+    height: 15%;
+    margin-bottom: 10px;
+  }
+  
+  input[type=date]:focus {
+    border: none;
+    background-color: none;
+    outline: 0;
+    width: 50%;
+    height: 15%;
+  }
+  
+  .calendar { 
+    width: 50%;
+    height: 15%;
+    overflow: auto;
+   
+  }
+
+.container{
+
+  width: 100%;
+  max-width: 900px;
+  height: 150vh;
+  min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  transition: height 0.2s ease;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  margin:  50px auto;
+  padding: 30px 10px;
+}
+.container.active{
+  height: 590px;
+}
+.container .wrapper{
+  width: 500px;
+  display: flex;
+}
+.container .wrapper section{
+  width: 100%;
+  background: #fff;
+  position: absolute
+}
+.container .post{
+  transition: margin-left 0.18s ease;
+}
+.container.active .post{
+  margin-left: -500px;
+}
+.post header{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 17px 0;
+  text-align: center;
+  border-bottom: 1px solid #bfbfbf;
+}
+.post form{
+  margin: 20px 25px;
+}
+.post form .content,
+.list li .column{
+  display: flex;
+  align-items: center;
+}
+.post form .content img{
+  cursor: default;
+  max-width: 52px;
+}
+form :where(textarea, button){
+  width: 100%;
+  outline: none;
+  border: none;
+}
+form textarea{
+  resize: none;
+  font-size: 18px;
+  margin-top: 30px;
+  min-height: 200px;
+}
+form textarea::placeholder{
+  color: #858585;
+}
+form textarea:focus::placeholder{
+  color: #b3b3b3;
+}
+form .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+form .options{
+  height: 57px;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-radius: 7px;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+#file
+{
+  display: none;
+}
+form .options :where(.list, li){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+form .options p{
+  color: #595959;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+}
+form .options .list{
+  list-style: none;
+}
+.options .list li{
+  height: 42px;
+  width: 42px;
+  margin: 0 -1px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.options .list li:hover{
+  background: #f0f1f4;
+}
+.options .list li img{
+  width: 23px;
+  padding-right: 10px ;
+}
+form button{
+  height: 53px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #BCC0C4;
+  cursor: no-drop;
+  border-radius: 7px;
+  background: #e2e5e9;
+  transition: all 0.3s ease;
+}
+form textarea:valid ~ button{
+  color: #fff;
+  cursor: pointer;
+  background: #4599FF;
+}
+form textarea:valid ~ button:hover{
+  background: #1a81ff;
+}
+.scroll-div
+{
+  width: 90%;
+  height: 200px;
+  overflow-y: scroll;
+  position: relative;
+  margin:  45px auto;
+  font-size: 18px;
+  text-align: center;
+  padding: 18px 0;
+}
+.uploadFile{
+  min-width: 450px;
+  position: relative;
+  padding: 50px 20px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+input[type="file"]{
+  display: none;
+}
+label{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #025bee;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  width: 300px;
+  padding: 18px 0;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.uploadFile p{
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+#images{
+  width: 90%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+figure{
+  width: 45%;
+}
+img{
+  width: 100%;
+}
+figcaption{
+  text-align: center;
+  font-size: 2.4vmin;
+  margin-top: 0.5vmin;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width:200px ){
+   .con
+   {width: 100%;}
+}

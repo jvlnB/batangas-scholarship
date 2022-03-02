@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Poppins', sans-serif;
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background:maroon;
+    
+}
+.navbar-brand img
+{
+    height: 90px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+p
+{
+    color: white;
+    display: inline-flex;
+    white-space: nowrap;
+    font-size: 15px;
+}
+.navbar-nav li 
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #080000!important;
+}
+.navbar-toggler
+{
+    border: none!important;
+    color: rgb(255, 64, 64)!important;
+}
+.nav-link
+{
+    color: rgb(255, 255, 255)!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+@media screen and (max-device-width: 3000px) and (orientation: portrait)
+{
+    .navbar{
+        width:100%;
+        overflow: hidden;
+        height: auto;
+        padding: auto;
+        margin: auto;
+    }
+}
+/*-----Cover-----*/ 
+.cover{
+    background-image: url(Images/capitol.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*-----Slider-----*/
+#slider
+{
+    margin: auto;
+    max-width: 75%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+   
+}
+
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption
+{
+    color: #000;
+    font-size: 42px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #FFFDD0;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color:  #FFFDD0 !important;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p{
+    text-align:center;
+    margin: 0 10px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width:200px ){
+   .con
+   {width: 100%;}
+}
+@media screen and (max-height: 800px){
+    #image
+    {
+        height: 80%;}
+}

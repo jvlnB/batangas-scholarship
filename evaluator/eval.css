@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+	
+	font-family: "Poppins", sans-serif;
+	background-image: linear-gradient(to top, #ff0000, #e02a15, #c03821, #a13f2b, #824233, #7d4a3e, #775249, #6f5954, #826b66, #967e79, #aa928c, #bea6a0);
+}
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+ 
+
+.nav-link
+{
+    color: rgb(20, 6, 6)!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.profile-tab-nav {
+	min-width: 250px;
+	
+}
+h5 {
+		font-size: x-large;
+		color: black;
+	}
+.tab-content {
+	flex: 1;
+	min-width: 250px;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	border-radius: 0;
+	color: rgb(51, 51, 51);
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+.container
+{
+    width: 80%;
+}
+
+.img-circle img {
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	border: 3px solid #fff;
+	background-size: 100% 100%;
+	position: relative;
+}	
+#file
+{
+	display: none;
+}
+#uploadbtn
+{
+	
+	bottom: 0;
+	outline: none;
+	position: relative;
+	text-align: right;
+	white-space: nowrap;
+	transform: translateX(-80%);
+	border-radius: 50%;
+	background: rgb(216, 218, 212);
+	height: 40px;
+	width: 40px;
+}
+#uploadbtn:hover
+{
+	background: whitesmoke;
+}
+i
+{
+	padding-right: 12px;
+	padding-top: 11px;
+	font-size: 50%;
+}
+
+.form-group
+{
+	width: 100%;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.inner
+{
+    max-width: 130%;
+    height: 600px;
+    background-color: cornsilk;
+}
+button[type="submit"]
+{
+	display: block;
+	margin-left: auto;
+	border: none;
+ 	outline: none;
+  	background-image: linear-gradient(to right bottom, #fcfca3, #f9d563, #fba829, #fe7200, #ff0000);
+  	padding: 10px 10px;
+  	border-radius: 25px;
+  	cursor: pointer;
+  	margin-bottom: 10px;
+    margin-top: 20px;
+  	color: #080000;
+  	text-decoration: none;
+    width: 30%;
+}
+button[type="submit"]:hover
+{
+	color: whitesmoke;
+	background-image: linear-gradient(to right bottom, #ff0000, #fe7200, #fba829, #f9d563, #fcfca3);
+}
+#upload
+{
+	display: block;
+	margin-left: auto;
+	border: none;
+ 	outline: none;
+  	background-image: linear-gradient(to right bottom, #fcfca3, #f9d563, #fba829, #fe7200, #ff0000);  font-size: 1rem;
+  	text-transform: uppercase;
+  	letter-spacing: 1px;
+  	padding: 5px 20px;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	margin-bottom: 10px;
+  	color: #080000;
+  	text-decoration: none;
+}
+th
+{
+	text-align: center;
+}

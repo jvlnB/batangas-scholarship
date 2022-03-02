@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----Cover-----*/
+body
+{
+    background-image:url(Images/capitol.jpg) ;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*---------Navigation---------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background: maroon;
+    
+}
+.navbar-brand img
+{
+    height: 60px;
+    padding-left: 40px;
+}
+.navbar-nav li 
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #080000!important;
+}
+.navbar-toggler
+{
+    border: none!important;
+    color: rgb(255, 64, 64)!important;
+}
+.nav-link
+{
+    color: rgb(255, 255, 255)!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.guide-area {
+    background: linear-gradient(
+    to top,
+    rgba(200, 200, 200, 0.5),
+    rgba(255,255,255, 1));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 3%;
+    
+}
+.guide-area .card {
+    margin-top: 5%;
+    height: auto; 
+    
+} 
+.card-gov.card-outline {
+    border-top: 6px solid red;
+}
+.title
+{
+    margin-top: 60px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.row
+{
+    justify-content: center;
+}
